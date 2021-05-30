@@ -1,15 +1,16 @@
+variable "resource_group_name" {
+  description = "Name of resource group"
+}
+
+variable "location" {
+  description = "Location of resource group"
+}
+
 variable "name" {
-    description = "Name of automation account"
-}
-
-variable "rg_name" {
-    description = "Name of resource group"
-}
-
-variable "rg_location" {
-    description = "Location of resource group"
+  description = "Name of automation account"
 }
 
 variable "nsg_rules" {
-    type = map
+  description = "Network security group rules"
+  type        = map(any)
 }
